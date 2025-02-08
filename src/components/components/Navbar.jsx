@@ -28,11 +28,11 @@ const Navbar = () => {
   }, []);
   return (
     <nav className={`${styles.paddingX
-      } w-full flex items-center py-0 fixed top-0 z-20 ${scrolled ? "bg-primary shadow pt-10 xs:pt-0 shadow-[#915eff56]" : "bg-transparent"
+      } w-full flex items-center py-0 fixed top-0 z-20 ${scrolled ? "bg-primary shadow pt-10 xs:pt-0 shadow-[#915eff56]" : "bg-transparent px-0"
       }`}
     >
       <div className=" max-w-7xl mx-auto flex justify-between items-center w-full">
-        <Link to="/" className="flex items-center   gap-2"
+        <Link to="/" className="flex items-center gap-2"
           onClick={() => {
             setActive('');
             window.scrollTo(0, 0);
@@ -58,7 +58,7 @@ const Navbar = () => {
           <img src={toggle ? close : menu} alt="menu" className="w-[28px] h-[28px] object-contain cursor-pointer"
             onClick={() => setToggle(!toggle)}
           />
-          <div className={`${!toggle ? 'hidden' : 'flex'} p-6 violet-gradient-hor absolute top-20 right-0 mx-4 w-40 items-center justify-center h-40 my-2 min-w-[140px] z-10 rounded-2xl`}>
+          <div className={`${!toggle ? 'hidden' : 'flex'} p-6 violet-gradient-hor absolute top-24 right-0 mx-4 w-40 items-center justify-center h-40 my-2 min-w-[140px] z-10 rounded-2xl`}>
             <ul className='list-none flex gap-4 flex-col justify-end items-center '>
               {navLinks.map((link, index) => (
                 <li key={index} className={`${active === link.title ? 'text-white' : 'text-white'} font-poppins text-[16px] cursor-pointer font-medium`}
