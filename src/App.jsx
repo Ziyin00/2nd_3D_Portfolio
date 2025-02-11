@@ -15,10 +15,10 @@ function App() {
         >
           <ToastContainer theme="dark" />
           <Navbar  />
-          <div className="sm:relative sm:z-0" >
+          <div className="relative z-0" >
 
           <Hero   />
-          <StarsCanvas className =' hidden sm:flex'/>
+          <StarsCanvas />
           </div>
         </div>
 
