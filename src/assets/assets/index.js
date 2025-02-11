@@ -31,4 +31,5 @@ import tripguide from './gym.png'
 import ziyin_logo from './ziyin_logo.png'
 import next from './tech/next1.png'
 
-export { logo, backend, creator, mobile, web, github, menu, close, css, docker, git, html, javascript, mongodb, nodejs, reactjs, redux, tailwind, typescript, threejs, meta, shopify, starbucks, tesla, carrent, jobit, tripguide, ziyin_logo, next }
+import gif from './download.gif'
+export { logo, backend, creator, mobile, web, github, menu, close, css, docker, git, html, javascript, mongodb, nodejs, reactjs, redux, tailwind, typescript, threejs, meta, shopify, starbucks, tesla, carrent, jobit, tripguide, ziyin_logo, next, gif }

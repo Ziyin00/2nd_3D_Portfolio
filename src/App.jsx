@@ -7,11 +7,19 @@ function App() {
 
   return (
     <BrowserRouter>
-      <div className="relative z-0 bg-primary">
-        <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center text-secondary">
+      <div className="relative z-0 bg-black">
+        <div 
+          // className="bg-hero-pattern bg-cover bg-no-repeat bg-center text-secondary"
+          className="bg-black"
+      
+        >
           <ToastContainer theme="dark" />
-          <Navbar />
-          <Hero />
+          <Navbar  />
+          <div className="relative z-0" >
+
+          <Hero   />
+          <StarsCanvas />
+          </div>
         </div>
 
         <About />
