@@ -1,6 +1,6 @@
 import { BrowserRouter } from "react-router-dom"
 
-import { About, Contact, Hero, Experience, Feedbacks, Navbar, Tech, Works, StarsCanvas } from "./components/components"
+import { About, Contact, Hero, Experience, Feedbacks, Navbar, Tech, Works, StarsCanvas, HeroStarsCanvas } from "./components/components"
 import { ToastContainer } from "react-toastify"
 function App() {
 
@@ -18,7 +18,7 @@ function App() {
           <div className="relative z-0" >
 
           <Hero   />
-          <StarsCanvas />
+          <HeroStarsCanvas />
           </div>
         </div>
 

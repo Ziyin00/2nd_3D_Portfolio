@@ -31,10 +31,10 @@ const Stars = (props) => {
   )
 }
 
-const StarsCanvas = () => {
+const HeroStarsCanvas = () => {
   return (
 
-    <div className="w-full h-auto absolute inset-0 z-[-1]">
+    <div className="w-full h-auto absolute inset-0 z-[-1] hidden xs:flex">
       <Canvas camera={{ position: [0, 0, 1] }}>
         <Suspense fallback={null}>
           <Stars />
@@ -46,4 +46,4 @@ const StarsCanvas = () => {
   )
 }
 
-export default StarsCanvas
+export default HeroStarsCanvas
