@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 
 import { styles } from "../../styles"
 
-import { menu, close, ziyin_logo } from "../../assets/assets"
+import { menu, close } from "../../assets/assets"
 import { navLinks } from '../../constants'
 
 
@@ -28,7 +28,7 @@ const Navbar = () => {
   }, []);
   return (
     <nav className={`${styles.paddingX
-      } w-full flex items-center py-0 fixed top-0 z-20 ${scrolled ? "bg-black shadow pt-10 xs:pt-0 shadow-[#915eff56]" : "bg-transparent px-0"
+      } w-full flex items-center py-10 fixed top-0 z-20 ${scrolled ? "bg-black shadow pt-10  shadow-[#915eff56]" : "bg-transparent px-0"
       }`}
     >
       <div className=" max-w-7xl mx-auto flex justify-between items-center w-full">
@@ -38,8 +38,7 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <img src={ziyin_logo} alt="logo" className="w-24 h-24 object-contain" />
-          <p className='text-white text-[18px] font-bold cursor-pointer flex -mt-4 -ml-2'>Ziyin &nbsp;<span className=''>Ab<span className='text-[#7d43fc]'>.</span></span></p>
+          <h1 className='text-white text-[20px] font-bold cursor-pointer flex  ml-2'>Ziyin &nbsp;<span className=''>Ab<span className='text-[#7d43fc]'>.</span></span></h1>
         </Link>
         <ul className='list-none sm:flex gap-10 hidden flex-row '>
           {navLinks.map((link, index) => (

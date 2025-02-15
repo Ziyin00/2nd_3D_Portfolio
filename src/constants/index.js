@@ -1,4 +1,4 @@
-import { mobile, backend, creator, web, javascript, typescript, html, css, reactjs, redux, tailwind, nodejs, mongodb, git, docker, meta, starbucks, carrent, jobit, tripguide, threejs, next } from '../assets/assets'
+import { mobile, backend, creator, web, javascript, typescript, html, css, reactjs, redux, tailwind, nodejs, mongodb, git, meta, starbucks, carrent, jobit, tripguide, threejs, next } from '../assets/assets'
 
 const navLinks = [
   {
@@ -25,7 +25,7 @@ const services = [
     icon: web
   },
   {
-    title: 'React Native Developer',
+    title: 'Alx backend Student',
     icon: mobile
   },
   {
@@ -84,10 +84,7 @@ const technologies = [
     icon: git
   },
 
-  {
-    name: 'docker',
-    icon: docker
-  },
+
   {
     name: 'Next JS',
     icon: next
